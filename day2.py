@@ -1,0 +1,10 @@
+print("Getting to know you!")
+user_name = input("What's your name?: ")
+user_food = input("what's your favourite food: ")
+user_music = input("what's your favourite music? ")
+user_adres = input("where do you live? ")
+	
+print("You are:" + user_name)
+print("You're probably hungry for: "+ user_food)
+print("and you're definietly getting your groove on to: "+user_music)
+print("living in the amazing: "+user_adres)
