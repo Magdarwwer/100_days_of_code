@@ -1,4 +1,4 @@
-#Day 21 - libraries!
+#Day 22 - libraries!
 # # # # Libraries are collections of code that other people have written. 
 # Video games often use massive libraries 
 # # # (for example: game engines) 
@@ -23,7 +23,7 @@ import random
 # for i in range(10):
 #   print(random.randint(1, 100))
 
-#DAY 21 - CHALLANGE: using Day 18 -code
+#DAY 22 - CHALLANGE: using Day 18 -code
 print("One-Million-To-One")
 attempt_counter = 0
 #answer = 256789
