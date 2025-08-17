@@ -6,25 +6,19 @@
 # for i in range(1,1000):
 #   print(i)
 #   os.system("clear") # cleans the previous line
-
 # #2
 # print("Welocme")
 # print("To")
 # print("replit")
-
 # time.sleep(3) # pasues the program for the amount of seconds I put in
-
 # os.system("clear")
-
 # username = input("Username: ")
-
 #part 2 Daily challenge:
 #Day 26 - OS library + TIME LIBARRY
 #os library let's you talk to the console
 #Challenge 26 - BUILD menu, use while True - make old iPod:
 import os
 import time
-
 import pygame
 import sys
 
