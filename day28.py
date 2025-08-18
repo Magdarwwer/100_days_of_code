@@ -49,3 +49,70 @@
 # # dostęp:
 # print(heroes[0].name, "vs", heroes[1].name)
 # print(heroes[0].name, "has", heroes[0].health, "HP")
+
+#Day 28 - BATTLE GAME - utilizing code from 27th day
+import random
+import string
+import time
+import os
+
+def random_name(length=6):
+  return ''.join(random.choice(string.ascii_letters) for _ in range(length))
+
+names_list = ["Aiden", "Aria","Myrola", "Bura", "Temar", "Hikaru", "Jolin", "Mikaku"]
+types_list = ["human", "imp", "wizard", "elf", "orc", "shrek", "angel"]
+
+def generate_character():
+  name = random.choice(names_list)
+  type = random.choice(types_list)
+  return name, type
+
+def rollDice(sides):
+  sides = random.randint(1,sides)
+  return sides
+
+def health():
+  health = ((rollDice(6) * rollDice (12))/2)+ 10
+  return health
+
+def attack():
+  attack = ((rollDice(6) * rollDice (12))/2)+ 12
+  return attack
+
+def isAlive():
+  return 
+
+time.sleep(1)
+print("CHARACTER BUILDER")
+continue_building = "yes"
+
+heroes_names = []
+heroes_health = []
+heroes_attack = []
+
+while True:
+  for i in range(2):
+    character_name,character_type = generate_character()
+    character_health = health()
+    character_strength = attack()
+
+    heroes_names += character_name
+    heroes_health += character_health
+    
+  
+    print("You character is ", character_name)
+    print("character TYPE: ", character_type)
+    print(character_name, "health points: ", character_health)
+    print(character_name, "attack stats: ", character_strength)
+    print()
+
+  print("Battle scene here:")
+  continue_building = input("Do you want to continue? >")
+  if continue_building == "yes" or continue_building == "Yes":
+    os.system("clear")
+    continue
+  else:
+    break
+
+print("You've created many awesome characters today! See you!")
+
