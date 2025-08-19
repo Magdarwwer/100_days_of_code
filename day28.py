@@ -89,6 +89,10 @@ continue_building = "yes"
 heroes = []
 
 while True:
+  heroes = []
+  dice = []
+  damage = 0
+  
   for i in range(2):
     character_name,character_type = generate_character()
     character_health = health()
@@ -109,6 +113,31 @@ while True:
     print()
 
   print("Battle scene here:")
+  if dice[0] > dice[1]:
+    print("Hero ", heroes[0]["name"], " wins this round!")
+    damage = abs(heroes[0]["health"] - heroes[1]["health"])
+    heroes[1]["health"] -= (damage+1)
+    if heroes[1]["health"] <= 0:
+      print("HERO ", heroes[0]["name"], " you have won!" )
+      break
+  elif dice[0]==dice[1]:
+    print("we have a TIE! No points!")
+  else:
+    #dice[0]<dice[1]
+    print("Hero ", heroes[1]["name"], " wins this round!")
+    damage = abs(heroes[1]["health"] - heroes[0]["health"])
+    heroes[0]["health"] = heroes[0]["health"] - (damage+1)
+    if heroes[0][health] <= 0:
+      print("HERO ", heroes[0]["name"], " you have won!" )
+      break
+  
+  # time.sleep(3)
+  # os.system("clear")
+  print("Status check:")
+  #check if no
+  print(heroes[0]["name"], "has health: ", heroes[0]["health"])
+  print(heroes[1]["name"], "has health: ", heroes[1]["health"])
+    
   continue_building = input("Do you want to continue? >")
   if continue_building == "yes" or continue_building == "Yes":
     os.system("clear")
