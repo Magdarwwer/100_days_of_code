@@ -127,7 +127,7 @@ while True:
     print("Hero ", heroes[1]["name"], " wins this round!")
     damage = abs(heroes[1]["health"] - heroes[0]["health"])
     heroes[0]["health"] = heroes[0]["health"] - (damage+1)
-    if heroes[0][health] <= 0:
+    if heroes[0]["health"] <= 0:
       print("HERO ", heroes[0]["name"], " you have won!" )
       break
   
