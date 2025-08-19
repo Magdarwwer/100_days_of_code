@@ -86,9 +86,7 @@ time.sleep(1)
 print("CHARACTER BUILDER")
 continue_building = "yes"
 
-heroes_names = []
-heroes_health = []
-heroes_attack = []
+heroes = []
 
 while True:
   for i in range(2):
@@ -96,13 +94,17 @@ while True:
     character_health = health()
     character_strength = attack()
 
-    heroes_names += character_name
-    heroes_health += character_health
-    
+    hero={
+      "name": character_name,
+      "type": character_type,
+      "health": character_health,
+      "attack": character_strength
+    }
+    heroes.append(hero)
   
-    print("You character is ", character_name)
-    print("character TYPE: ", character_type)
-    print(character_name, "health points: ", character_health)
+    print("You character is ", heroes[i]["name"])
+    print("character TYPE: ", heroes[i]["type"])
+    print(character_name, "health points: ", heroes[i]["health"])
     print(character_name, "attack stats: ", character_strength)
     print()
 
