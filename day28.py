@@ -76,24 +76,18 @@ def health():
   return health
 
 def attack():
-  attack = ((rollDice(6) * rollDice (12))/2)+ 12
+  attack = ((rollDice(6) * rollDice (8))/2)+ 12
   return attack
-
-def isAlive():
-  return 
 
 time.sleep(1)
 print("CHARACTER BUILDER")
 continue_building = "yes"
 
 heroes = []
+dice = []
+damage = 0
 
-while True:
-  heroes = []
-  dice = []
-  damage = 0
-  
-  for i in range(2):
+for i in range(2):
     character_name,character_type = generate_character()
     character_health = health()
     character_strength = attack()
@@ -105,13 +99,24 @@ while True:
       "attack": character_strength
     }
     heroes.append(hero)
+    
+    hero_turn = rollDice(6)
+    dice.append(hero_turn)
   
     print("You character is ", heroes[i]["name"])
     print("character TYPE: ", heroes[i]["type"])
     print(character_name, "health points: ", heroes[i]["health"])
     print(character_name, "attack stats: ", character_strength)
+    print("dice rolled: ", dice[i])
     print()
 
+while True:
+  # time.sleep(5)
+  # os.system("clear")
+  
+  hero_turn = rollDice(6)
+  enemy_turn = rollDice(6)
+  
   print("Battle scene here:")
   if dice[0] > dice[1]:
     print("Hero ", heroes[0]["name"], " wins this round!")
