@@ -42,4 +42,58 @@
 #       "\033[32m", "then you don't ", "\033[0m", "get odd gaps ", sep="")
 
 
-#7Secret cursos
+#7Secret cursos - COMMAND TO TURN THE CURSOR OF
+# import os, time
+
+# #turn cursor off:
+# #print("\033[?25l", end="")
+
+# #turn cursor on:
+# print("\033[?25h", end="")
+
+# for i in range(1, 101):
+#   print(i)
+#   time.sleep(0.5)
+#   os.system("clear")
+#------------
+# import os, time
+# print('\033[?25l', end="")
+# for i in range(1, 101):
+#   print(i)
+#   time.sleep(0.2)
+#   os.system("clear")
+
+# print('\033[?25h', end="")
+
+#Day 29 challenge - Write a subroutine
+# color, and text as argument
+# print text in that color and turn
+def changeColor(color, word):
+ if color=="red":
+    print("\033[31m", word, sep="", end="")
+ elif color == "blue":
+   print("\033[0;34m", word, sep="", end="")
+ elif color == "green":
+   print("\033[0;32m", word, sep="", end="")
+ elif color == "brown":
+   print("\033[0;33m", word, sep="", end="")
+ elif color == "purple":
+   print("\033[0;35m", word, sep="", end="")
+ elif color == "cyan":
+    print("\033[0;36m", word, sep="", end="")
+ elif color == "yellow":
+   print("\033[1;33m", word, sep="", end="")   
+ else:
+   print("\033[0m", word, sep="", end="")
+
+
+print("Super Subroutine")
+print("With my ", end="")
+changeColor("purple", "new program")
+changeColor("reset", " I can just call red( 'and') ")
+changeColor("red", "it will print in red ")
+changeColor("blue", "or even blue\n ")
+changeColor("no", "With no ")
+changeColor("cyan", "weird gaps\n")
+changeColor("re", "EPIC.")
+
