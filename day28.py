@@ -117,6 +117,18 @@ while True:
   hero_turn = rollDice(6)
   enemy_turn = rollDice(6)
   
+  print(heroes[0]["name"], "rolled:", hero_turn)
+  print(heroes[1]["name"], "rolled:", enemy_turn)
+  dice[0] = hero_turn
+  dice[1] = enemy_turn
+  
+  # print()
+  # print("----------")
+  # print("You character is ", heroes[0]["name"])
+  # print("dice rolled: ", dice[0])
+  # print("You character is ", heroes[1]["name"])
+  # print("dice rolled: ", dice[1])
+  
   print("Battle scene here:")
   if dice[0] > dice[1]:
     print("Hero ", heroes[0]["name"], " wins this round!")
@@ -124,6 +136,8 @@ while True:
     heroes[1]["health"] -= (damage+1)
     if heroes[1]["health"] <= 0:
       print("HERO ", heroes[0]["name"], " you have won!" )
+      print(heroes[0]["name"], "has health: ", heroes[0]["health"])
+      print(heroes[1]["name"], "has health: ", heroes[1]["health"])
       break
   elif dice[0]==dice[1]:
     print("we have a TIE! No points!")
@@ -134,6 +148,8 @@ while True:
     heroes[0]["health"] = heroes[0]["health"] - (damage+1)
     if heroes[0]["health"] <= 0:
       print("HERO ", heroes[0]["name"], " you have won!" )
+      print(heroes[0]["name"], "has health: ", heroes[0]["health"])
+      print(heroes[1]["name"], "has health: ", heroes[1]["health"])
       break
   
   # time.sleep(3)
