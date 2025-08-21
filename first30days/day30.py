@@ -58,3 +58,19 @@ response = "Alejandra ordered {food} to eat at the {location} with her friend, {
 print(response)
 
 #Day 30 challenge:
+for i in range(1, 31):
+  print(f"What do you think of challenge day {i:<2} ?")
+  user_answer = input(">")
+  print()
+  print(f"Day {i}:")
+  print(f"You tought the day {i} was {user_answer}")
+
+# print("30 Days Down - What did you think?")
+# print()
+# for i in range(1, 31):
+#   thought = input(f"Day {i}:\n")
+#   print()
+#   myText = f"You thought Day {i} was"
+#   print(f"{myText:^35}")
+#   print(f"{thought:^35}")
+#   print()
