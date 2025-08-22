@@ -49,8 +49,8 @@ colors.append("pink")
 print("\n")
 
 #to fix xddd wtf
-print(f"🔥▶  ...{changeColor("white", "Radio gaga")}Radio Gaga")
-changeColor("yellow", "Queen")
+print(f"🔥▶\t{changeColor("white", "Radio gaga")}Radio Gaga")
+changeColor("yellow", "\tQueen")
 print("\n")
 
 #testing what \t does xd
