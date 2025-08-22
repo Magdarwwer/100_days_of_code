@@ -22,7 +22,7 @@ def changeColor(color, word):
  elif color == "pink":
   print("\033[1;31m", word, sep = "", end="")
  else:
-   print("\033[0m", word, sep="", end="")
+   return("\033[0m")
 
 
 changeColor(f"red", "=")
@@ -46,7 +46,10 @@ colors.append("none")
 colors.append("green")
 colors.append("pink")
 
-print("\n🔥▶", )
+print("\n")
+
+#to fix xddd wtf
+print(f"🔥▶  ...{changeColor("white", "Radio gaga")}Radio Gaga")
 changeColor("yellow", "Queen")
 print("\n")
 
