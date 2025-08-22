@@ -8,3 +8,5 @@ def colorChange(color):
     elif color == " yellow":
         return("\033[33m")
     
+title = f"{colorChange('red')}={colorChange('white')}={colorChange("blue")}={colorChange('yellow')}Music App{colorChange('blue')}={colorChange('white')}={colorChange('red')}="
+print(title)
