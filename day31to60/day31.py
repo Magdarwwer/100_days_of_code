@@ -33,3 +33,8 @@ changeColor("red", "=")
 # print("\n")
 
 print("\n🔥▶", )
+changeColor("yellow", "Queen")
+print("\n")
+for i in range(0,7):
+ print(i, end="\t")
+    
