@@ -23,6 +23,13 @@ def changeColor(color, word):
    print("\033[0m", word, sep="", end="")
 
 
+changeColor(f"red", "=")
+changeColor("none", "=")
+changeColor("blue", "=")
+changeColor("yellow", "Music App")
+changeColor("blue", "=")
+changeColor("none", "=")
 changeColor("red", "=")
-changeColor("red", "=")
-changeColor("red", "=")
+# print("\n")
+
+print("\n🔥▶", )
