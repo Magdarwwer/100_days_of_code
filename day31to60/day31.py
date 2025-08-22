@@ -53,7 +53,7 @@ print("\n")
 for i in range(0,7):
  print(i, end="\t")
  
-for i in range(words):
+for i in words:
     changeColor(colors[counter], i )
     counter+=1
     
