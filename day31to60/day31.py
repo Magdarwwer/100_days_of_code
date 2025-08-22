@@ -19,6 +19,8 @@ def changeColor(color, word):
     print("\033[0;36m", word, sep="", end="")
  elif color == "yellow":
    print("\033[1;33m", word, sep="", end="")   
+ elif color == "pink":
+  print("\033[1;31m", word, sep = "", end="")
  else:
    print("\033[0m", word, sep="", end="")
 
@@ -32,9 +34,26 @@ changeColor("none", "=")
 changeColor("red", "=")
 # print("\n")
 
+words = []
+words.append("PREV")
+words.append("NEXT")
+words.append("PAUSE")
+
+counter = 0
+
+colors = []
+colors.append("none")
+colors.append("green")
+colors.append("pink")
+
 print("\n🔥▶", )
 changeColor("yellow", "Queen")
 print("\n")
+
 for i in range(0,7):
  print(i, end="\t")
+ 
+for i in range(words):
+    changeColor(colors[counter], i )
+    counter+=1
     
