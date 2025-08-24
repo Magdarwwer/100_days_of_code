@@ -34,10 +34,9 @@ changeColor("none", "=")
 changeColor("red", "=")
 # print("\n")
 
-words = []
-words.append("PREV")
-words.append("NEXT")
-words.append("PAUSE")
+print(f"{changeColor('white')}{"PREV":<35}")
+print(f"{changeColor('green')}{"NEXT":^35}")
+print(f"{changeColor('purple')}{"PURPLE":>35}")
 
 counter = 0
 
