@@ -1,8 +1,7 @@
 #Day 31 challenge: USER INTERFACE:4\
     #use print statements & f-strings
     #No inputs from the user
-    
-
+  
 #FIRST INTERFACE:
 def changeColor(color, word):
  if color=="red":
@@ -34,9 +33,15 @@ changeColor("none", "=")
 changeColor("red", "=")
 # print("\n")
 
-print(f"{changeColor('white')}{"PREV":<35}")
-print(f"{changeColor('green')}{"NEXT":^35}")
-print(f"{changeColor('purple')}{"PURPLE":>35}")
+title = f"{changeColor('red', "=")}{changeColor('white',"=")}{changeColor('blue',"=")}{changeColor('yellow',"Music App")}"
+
+# print(f"{changeColor('white')}{"PREV":<35}")
+# print(f"{changeColor('green')}{"NEXT":^35}")
+# print(f"{changeColor('purple')}{"PURPLE":>35}")
+
+print(f"{changeColor('white', "PREV")}")
+# print(f"{changeColor('green',"NEXT":^35)}")
+# print(f"{changeColor('purple')}{"PURPLE":>35}")
 
 counter = 0
 
