@@ -24,7 +24,7 @@ def changeColor(color, word):
    return("\033[0m")
 
 
-changeColor(f"red", "=")
+changeColor("red", "=")
 changeColor("none", "=")
 changeColor("blue", "=")
 changeColor("yellow", "Music App")
