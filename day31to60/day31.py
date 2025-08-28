@@ -73,4 +73,8 @@ print(text)
 print(changeColor("red", text))
 print(f"{changeColor("white", text)}")
 # print(f"{changeColor("white", {text:^35})}") => it doesn't work
-  
+
+text = "-- ARMBOOK --"  
+print(f"{changeColor("blue", {text})}")
+
+text ="Definietly not a rip off of a certain other"
