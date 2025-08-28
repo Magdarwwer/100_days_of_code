@@ -65,6 +65,12 @@ print("\n")
 #testing what \t does xd
 # for i in range(0,7):
 #  print(i, end="\t")
-
-
+print()
+print("\n")
+print("\n")
+text = "WELCOME TO"
+print(text)
+print(changeColor("red", text))
+print(f"{changeColor("white", text)}")
+# print(f"{changeColor("white", {text:^35})}") => it doesn't work
   
