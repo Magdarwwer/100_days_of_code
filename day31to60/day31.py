@@ -42,7 +42,7 @@ print(f"{title:^35}")
 
 print(f"{changeColor('white', "PREV")}")
 # print(f"{changeColor('green',"NEXT":^35)}")
-# print(f"{changeColor('purple')}{"PURPLE":>35}")
+print(f"{changeColor('purple')}{"PURPLE":>35}")
 
 counter = 0
 
