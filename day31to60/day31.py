@@ -35,6 +35,7 @@ changeColor("red", "=")
 
 title = f"{changeColor('red', "=")}{changeColor('white',"=")}{changeColor('blue',"=")}{changeColor('yellow',"Music App")}"
 
+print(f"{title:^35}")
 # print(f"{changeColor('white')}{"PREV":<35}")
 # print(f"{changeColor('green')}{"NEXT":^35}")
 # print(f"{changeColor('purple')}{"PURPLE":>35}")
@@ -54,11 +55,14 @@ print("\n")
 
 #to fix xddd wtf
 print(f"🔥▶\t{changeColor("white", "Radio gaga")}Radio Gaga")
-changeColor("yellow", "\tQueen")
+print(changeColor("yellow", "\tQueena"))
+
+print(f"\t{changeColor('yellow', "Queen")}") #why after this I additionally get none?
 print("\n")
 
 #testing what \t does xd
 # for i in range(0,7):
 #  print(i, end="\t")
- 
+
+
   
