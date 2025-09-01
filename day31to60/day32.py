@@ -3,3 +3,4 @@
 myList = []
 #index 0
 myList[2] = "stuff"
+#dily remindersa
