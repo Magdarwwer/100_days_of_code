@@ -46,3 +46,7 @@ print(f"The first color is {colors[0]}")
 #violet, is index 5.
 colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Violet"]
 print(f"The first color is {colors[5]}")
+
+#fix my code:
+grocery_list = ["bananas", "bread", "milk", "eggs", "juice", "cheese"]
+print(f"The first grocery item to buy is {grocery_list[0]}.")
