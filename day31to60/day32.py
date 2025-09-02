@@ -1,4 +1,5 @@
 #LISTS ARRAYS
+import random
 #sometimes you don;t know how much data you need to store
 myList = []
 #index 0
@@ -50,3 +51,13 @@ print(f"The first color is {colors[5]}")
 #fix my code:
 grocery_list = ["bananas", "bread", "milk", "eggs", "juice", "cheese"]
 print(f"The first grocery item to buy is {grocery_list[0]}.")
+
+#Day32 challenge:Create a list that stores greetings in different languages. 
+#Start with the language you speak.
+
+greetings = ["cześć", "hola", "hello", "ahoy", "guten tag", "salut", "ciao", "priviet"]
+
+print("dlugosc listy: ", len(greetings)) #lista 8 
+number = random.randint(0, (len(greetings)-1))
+
+print(f"This is a random greeting, position: {number}, saying {greetings[number]}!")
