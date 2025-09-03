@@ -39,24 +39,55 @@ myAgenda = []
 
 #3. Common Errors: added if else removing items that were not on the list
 
-# #If you see object has no attribute turn around, change their places
-myPartyList = []
-# #4. Fix my code: 
+# # #If you see object has no attribute turn around, change their places
+# myPartyList = []
+# # #4. Fix my code: 
+# def printList():
+#   print() 
+#   for item in myPartyList:
+#     print(item)
+#   print() 
+
+# while True:
+#   menu = input("add or remove?: >")
+#   if menu == "add":
+#     item = input("Who should I add to the party list?: ")
+#     myPartyList.append(item)
+#   elif menu == "remove":
+#     item = input("Who should I remove from the party list?: ")
+#     if item in myPartyList:
+#       myPartyList.remove(item)
+#     else:
+#       print(f"{item} was not in the list")
+#   printList()
+  
+  
+#Day 33 - Daily challenge:ToDo List Manager:
+toDoList = []
+
 def printList():
   print() 
-  for item in myPartyList:
+  for item in toDoList:
     print(item)
   print() 
 
+#First IN First Out - FIFO
+print("To Do List Manager:")
+#userinput = input("Do you want to view, add, or edit your to do list?")
+
 while True:
-  menu = input("add or remove?: >")
-  if menu == "add":
-    item = input("Who should I add to the party list?: ")
-    myPartyList.append(item)
-  elif menu == "remove":
-    item = input("Who should I remove from the party list?: ")
-    if item in myPartyList:
-      myPartyList.remove(item)
+  userinput = input("Do you want to view, add, or edit your to do list?")
+  if userinput == "add" or userinput == "Add":
+    item = input("What do you ADD to the list?: > ")
+    #to the bottom of the list.
+    toDoList.append(item)
+  elif userinput == "edit" or userinput == "Edit":
+    item = input("What do you want to edit/remove? > ")
+    if item in toDoList:
+      toDoList.remove(toDoList[0])
     else:
-      print(f"{item} was not in the list")
-  printList()
+      print(f"Item {item} was not found on the list")
+  elif userinput == "view":
+    printList()
+  
+#could use os & time libraries for cleaning the screen
