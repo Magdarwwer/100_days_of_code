@@ -19,3 +19,22 @@ while True:
   printList()
 
 print(myAgenda)
+
+#we could use os i sleep -> we could pause & clean the screen
+
+#2. Removing Items from the list:
+while True:
+  menu = input("add or remove?: ")
+  if menu == "add":
+    item = input("What's next on the Agenda?: ")
+    myAgenda.append(item)
+  elif menu == "remove":
+    item = input("What do you want to remove?: ")
+    if item in myAgenda: # if item in a list
+      myAgenda.remove(item)
+    else:
+      print(f"Item {item} was not found on the list")
+  printList()
+
+
+#3. Common Errors: added if else removing items that were not on the list
