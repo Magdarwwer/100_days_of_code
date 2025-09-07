@@ -24,5 +24,7 @@ while True:
     email = input ("Email > ")
     if email in listOfEmail:
       listOfEmail.remove(email)
+    elif menu == "3": 
+        prettyPrint() 
   time.sleep(1)
   os.system("clear")
