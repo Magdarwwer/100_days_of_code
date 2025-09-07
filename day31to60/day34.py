@@ -3,16 +3,17 @@
 import os, time
 listOfEmail = []
 
-
 def prettyPrint():
   os.system("clear") # start by clearing the screen
   print("listofEmail") # print the title of my program
   print() # print a blank line
-  counter = 1
-  for email in listOfEmail: # use for loop to access list
-    print(f"{counter}: {email}")
-    counter +=1 
-  time.sleep(1)
+#   counter = 1
+#   for email in listOfEmail: # use for loop to access list
+#     print(f"{counter}: {email}")
+#     counter +=1 
+for index in range(len(listOfEmail)): # len counts how many items in a list
+    print(f"{index}: {listOfEmail[index]}") 
+time.sleep(1)
 
 while True:
   print("SPAMMER Inc.")
