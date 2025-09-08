@@ -9,6 +9,12 @@ def checkIfexistsandAdd(task):
     listOfTasks.append(addedTask)
 #menu - add, change, remove
 
+def printList():
+  print()
+  for items in listOfTasks:
+    print(items)
+  print()
+
 # you can't add duplicates! If input exists - print("it already exists") and move on
 
 while True:
