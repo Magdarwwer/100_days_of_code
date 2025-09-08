@@ -19,7 +19,9 @@ while True:
     checkIfexistsandAdd(addedTask)
   elif menu == "edit" or menu == "3":
     whatEdit = int(input("What element do you want to remove? (index)> "))
-    listOfTasks[whatEdit] = input("Edit element> ")
+    #added -1 so the index matches the choice. 
+    #can add logic for cheking if user gave number or string and the finding the string in a list or going under the right index
+    listOfTasks[(whatEdit-1)] = input("Edit element> ")
   elif menu == "display" or menu == "show" or menu == "view" or menu == "1":
     print(listOfTasks)
   elif menu == "remove" or menu == "4":
