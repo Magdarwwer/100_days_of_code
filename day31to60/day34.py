@@ -59,3 +59,53 @@ while True:
 #     prettyPrint() 
 #   time.sleep(1)
 #   os.system("clear")
+
+#3----------------FIX My CODE & Daily challenge
+#FIX MY Code:
+import os, time
+listOfFood = []
+
+def prettyPrint():
+  os.system("clear") 
+  print("listofFood") 
+  print()
+  counter = 1 
+  for order in listOfFood: 
+    print(f"[counter]: {order}") 
+    counter += 1 
+  time.sleep(1)
+  
+while True:
+  print("Yummy Food Restaurant")
+  menu = input("1. Order food\n2: Delete order\n3. Leave a review\n4. Delivery\n> ")
+  if menu == "1":
+    order = input("order > ")
+    listOfFood.append(order)
+  elif menu =="2":
+    order = input ("delete order> ")
+    if order in listOfFood:
+      listOfFood.remove(order)
+  elif menu == "3": 
+    prettyPrint()
+  elif menu == "4":
+    counter = 1
+    for index in range(10):
+      print(f"Email {counter}:")
+      print(f"Dear {listOfFood[index]}")
+      print("""
+      It has come to our attention that you're missing         out on 
+      the amazing Replit 100 days of code. We insist you       do it right away. 
+      If you don't we will pass on your email address to       every spammer we've 
+      ever encountered and also sign you up to the My          Little Pony newsletter, 
+      because that's neat. We might just do that anyway.
+      Love and hugs,
+      Ian Spammington III
+      """)
+      counter +=1
+      time.sleep(5)
+      os.system("clear")
+  time.sleep(1)
+  os.system("clear")
+
+#Day 34 challenge - extend the programm
+#add option 4 - GET SPAMMING, print 
