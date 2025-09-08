@@ -28,7 +28,8 @@ while True:
     doubleCheck = input("Are you sure you want to remove an element? (yes/no) >")
     if doubleCheck == "yes" or doubleCheck == "YES" or doubleCheck == "Yes":
       whatRemove = int(input("Element at what index you want to remove? >"))
-      listOfTasks.remove(whatRemove)
+      #listOfTasks.remove(whatRemove)
+      del listOfTasks[whatRemove - 1]
     elif doubleCheck == "no" or doubleCheck == "NO" or doubleCheck == "No":
       print("That's what I thought so...")
     else:
