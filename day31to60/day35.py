@@ -27,6 +27,9 @@ while True:
     whatEdit = int(input("What element do you want to remove? (index)> "))
     #added -1 so the index matches the choice. 
     #can add logic for cheking if user gave number or string and the finding the string in a list or going under the right index
+    # for i in range(0,len(toDoList)):
+    #   if toDoList[i]==item:
+    #     toDoList[i]=new
     listOfTasks[(whatEdit-1)] = input("Edit element> ")
   elif menu == "display" or menu == "show" or menu == "view" or menu == "1":
     print(listOfTasks)
