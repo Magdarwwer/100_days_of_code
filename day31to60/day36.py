@@ -34,3 +34,13 @@ while True:
   if addItem not in myList:
     myList.append(addItem) 
   printList()
+  
+  #Fix my code:
+whatToEat = input("What do you fancy for dinner? ")
+
+if whatToEat.strip().lower() == "pasta": 
+  print("Get out the pasta maker.")
+elif whatToEat.strip().upper() == "TACOS":
+  print("Let's do Taco Tuesday!")
+else: 
+  print("Go search the fridge.")
