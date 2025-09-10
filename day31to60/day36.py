@@ -11,3 +11,17 @@ print(f"using .upper() :{ourTitle.upper()}")
 print(f"using capitalize(): {ourTitle.capitalize()}")
 
 #.strip() - removes spaces
+#NO DUPLICATES:
+myList = []
+
+def printList():
+  print()
+  for i in myList:
+    print(i)
+  print()
+
+while True:
+  addItem = input("Item > ")
+  if addItem not in myList:
+    myList.append(addItem) 
+  printList()
