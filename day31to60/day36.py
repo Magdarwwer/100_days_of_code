@@ -64,7 +64,8 @@ while True:
       namesList.append(fullname)
     #   namesList.append(name)
     #   namesList.append(surname)
-    
+    else:
+      print("ERROR: Duplicate name")
     printList(namesList)
     
     stopvar = input("Do you want to continue? yes/no >")
