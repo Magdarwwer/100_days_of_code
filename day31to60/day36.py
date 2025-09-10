@@ -15,9 +15,9 @@ print(f"using capitalize(): {ourTitle.capitalize()}")
 #NO DUPLICATES:
 myList = []
 
-def printList():
+def printList(argumentlist):
   print()
-  for i in myList:
+  for i in argumentlist:
     print(i)
   print()
 
