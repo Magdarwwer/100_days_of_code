@@ -52,18 +52,23 @@ def printList(argumentlist):
 
 namesList = []
 stopvar = "yes"
+
 while True:
   if stopvar.strip().lower() == "yes":
     name = input("Plesae provide a name >").strip().capitalize()
-    surname = input("Please provide a surname >").strip().capitalize()  
-    if name not in namesList and surname not in namesList:
-      namesList.append(name)
-      namesList.append(surname)
+    surname = input("Please provide a surname >").strip().capitalize()
+    fullname = f"{name} {surname}"
+      
+    # if name not in namesList and surname not in namesList:
+    if fullname not in namesList:
+      namesList.append(fullname)
+    #   namesList.append(name)
+    #   namesList.append(surname)
     
     printList(namesList)
     
     stopvar = input("Do you want to continue? yes/no >")
-    time.sleep(3)
+    time.sleep(2)
     os.system("clear")
   elif stopvar.strip().lower() == "no":
     break
