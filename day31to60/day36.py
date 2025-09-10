@@ -20,8 +20,17 @@ def printList():
     print(i)
   print()
 
+# while True:
+#   addItem = input("Item > ")
+#   if addItem not in myList:
+#     myList.append(addItem) 
+#   printList()
+  
+  ##constantly add something to the list
 while True:
-  addItem = input("Item > ")
+  addItem = input("Item > ").strip().capitalize() #changes how it will be stored
+  #kolejność of applying functions matter
+  #The functions manipulating the strings are applied in the order we add them
   if addItem not in myList:
     myList.append(addItem) 
   printList()
