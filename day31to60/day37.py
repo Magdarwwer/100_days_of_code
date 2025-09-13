@@ -20,3 +20,6 @@ print(myString[0:5:2])
 print(myString[::2])
 #print every 3 letters:
 print(myString[::3])
+
+#This code reverses the string, outputting '.dneirf ym ereht olleH'
+print(myString[::-1])
