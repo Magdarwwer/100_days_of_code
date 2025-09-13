@@ -16,3 +16,7 @@ print(myString[:])
 
 #print every other letter:
 print(myString[0:5:2])
+#Default at the start ->0 | Default at the end ->last | letter and print every 2 letters
+print(myString[::2])
+#print every 3 letters:
+print(myString[::3])
