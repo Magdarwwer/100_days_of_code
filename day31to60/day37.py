@@ -10,3 +10,6 @@ print(myString[6:11])
 print(myString[12:])
 #this below is bad:
 print(myString[12:0])
+
+#a whole string
+print(myString[:])
