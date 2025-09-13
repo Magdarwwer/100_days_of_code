@@ -31,3 +31,8 @@ print(myString[::-1])
 myString = "Hello there my friend."
 print(myString.split())
 #This code outputs ['Hello', 'there', 'my', 'friend.']
+
+#Common mistakes:
+myString = "Hello there my friend."
+print(myString[0:5])
+#fixed 4 -> 5 to print 'Hello' instead of 'Hell'
