@@ -77,3 +77,11 @@ new_last_n = new_list[2][:2].capitalize() + new_list[3][:3].lower()
 final_name = new_name + " " + new_last_n
 print(final_name)
 print(f"May the force be with you {final_name}")
+
+
+#TIPS:
+#1) To get charaters from the beginning of a string, leave the first argument blank. ex: [:3] gets the first 3 characters.
+#2) To get charaters from the end of a string, make the first argument a negative number for how many charaters to get. Leave the last argument blank. ex: [-5:] gets the last 5 characters.
+#3) fString formatting uses .title for first character capitalization and .lower for all lower case.
+#4) Use fStrings to join the sliced characters to a new variable as you get the correct characters from each string.
+#5) For extra points, get the user to input all info at once separated by spaces.
