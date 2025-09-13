@@ -43,3 +43,10 @@ print(myString[0:5])
 #The third argument should be at least 1.
 myString = "Hello there my friend."
 print(myString[0:4:1])
+
+#Fix my code:
+# This code should output 'Hello there'
+print()
+print("Fix My Code:")
+myString = "Hello there my friend."
+print(myString[0:11:1])
