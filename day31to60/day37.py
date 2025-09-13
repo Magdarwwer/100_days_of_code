@@ -36,3 +36,10 @@ print(myString.split())
 myString = "Hello there my friend."
 print(myString[0:5])
 #fixed 4 -> 5 to print 'Hello' instead of 'Hell'
+
+#The 0 in the third argument means 'move on 0 characters in the string each time'. 
+#You've told it to print the same character again and again and again....
+
+#The third argument should be at least 1.
+myString = "Hello there my friend."
+print(myString[0:4:1])
