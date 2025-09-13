@@ -25,3 +25,9 @@ print(myString[::3])
 print(myString[::-2])
 #print JUST BACKWARD every letter
 print(myString[::-1])
+
+#split lets us split a string into a list of individual words 
+#by separating it at the space characters.
+myString = "Hello there my friend."
+print(myString.split())
+#This code outputs ['Hello', 'there', 'my', 'friend.']
