@@ -50,3 +50,12 @@ print()
 print("Fix My Code:")
 myString = "Hello there my friend."
 print(myString[0:11:1])
+
+#Day 37 CHALLENGE: Generate Star Wars Names:
+first_name = input("Enter first name >")
+last_name = input("Enter last name >")
+maiden_name = input("what's your maiden name? >")
+city = input("Enter city you were born in >")
+
+new_first_name = first_name[0:3].title() + last_name[:3].lower()
+print(new_first_name)
