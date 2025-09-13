@@ -13,3 +13,6 @@ print(myString[12:0])
 
 #a whole string
 print(myString[:])
+
+#print every other letter:
+print(myString[0:5:2])
