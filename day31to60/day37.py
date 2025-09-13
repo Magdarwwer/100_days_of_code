@@ -22,4 +22,6 @@ print(myString[::2])
 print(myString[::3])
 
 #This code reverses the string, outputting '.dneirf ym ereht olleH'
+print(myString[::-2])
+#print JUST BACKWARD every letter
 print(myString[::-1])
