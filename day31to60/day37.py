@@ -59,3 +59,21 @@ city = input("Enter city you were born in >")
 
 new_first_name = first_name[0:3].title() + last_name[:3].lower()
 print(new_first_name)
+new_second_name = maiden_name[0:2].capitalize() + city[0:3].lower()
+
+print(
+    f"Your new Star Wars name: May the force be with you {new_first_name} {new_second_name}!"
+)
+
+#SECOND SOLUTION USING SPLI!!! Extra points for getting all the inputs with just one input command and the split function.
+all_in_one = input(
+    "Enter first name, last name, maiden name and the city separated with a SPACE >"
+)
+new_list = all_in_one.split()
+
+new_name = new_list[0][:3].title() + new_list[1][:3].lower()
+new_last_n = new_list[2][:2].capitalize() + new_list[3][:3].lower()
+
+final_name = new_name + " " + new_last_n
+print(final_name)
+print(f"May the force be with you {final_name}")
