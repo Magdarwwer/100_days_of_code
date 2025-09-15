@@ -5,7 +5,10 @@
 myString = "Day 38"
 myString = input("Type something> ")
 for letter in myString:
-  print(letter)
+  if letter.lower() == "a":
+    print('\033[33m', end='')
+print(letter)
+print('\33[0m', end = '')
 
 # This code outputs:
 #D
