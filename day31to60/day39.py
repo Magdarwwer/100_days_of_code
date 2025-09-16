@@ -19,7 +19,7 @@ def remove_letter(letter, list):
       if item == letter:
         list.remove(letter)
         
-life_counter = 5
+life_counter = 6
 #Then the user starts to guess letters
 while True:
   letter = input("Pick a letter> ")
@@ -33,8 +33,9 @@ while True:
             print("_", end ='')
       else:
         print("Nope, not in there.")
+        life_counter -=1
         print(f"{life_counter} left")
-        life_counter =-1
+        
     else:
       print("Letter already used")
       #continue
@@ -42,6 +43,9 @@ while True:
     print("Put in a letter man")
     #continue
     
+if life_counter > 0:# and # 
+    print("you win")
+print()
 #Track what letters they used
 
 
