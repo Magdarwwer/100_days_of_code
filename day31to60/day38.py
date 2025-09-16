@@ -43,3 +43,30 @@ for letter in user_input:
   else:
     print('\33[0m', end = '')
   print(letter, end ='')
+
+
+#second approach:
+def colorChange(user_input, letter):
+  if letter.lower() == "r":
+    print('\033[31m', end="")
+  elif letter.lower() == "b":
+    print('\033[34m', end="")
+  elif letter.lower() == "g":
+    print('\033[92m', end="")
+  elif letter.lower() == "y":
+    print('\033[93m', end="")
+  elif letter.lower() == "p":
+    print('\033[35m', end="")
+  elif letter.lower() == "o":
+    print('\033[33m', end="")
+  elif letter == " ":
+    print('\33[0m', end = '')
+  elif letter.lower() == "m":
+    print('\33[95m', end = '')
+  else:
+    print('\33[0m', end = '')
+
+for letter in user_input:
+  colorChange(user_input, letter.lower())
+  print(letter, end ='')
+print()
