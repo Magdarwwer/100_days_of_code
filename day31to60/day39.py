@@ -48,6 +48,7 @@ if life_counter > 0:# and #
 print()
 #Track what letters they used
 
+#Keep track of letters used. Try adding each letter chosen to a new list, then checking this list for each subsequent choice.
 
 #ASCII HANGMAN:
 HANGMANPICS = ['''
