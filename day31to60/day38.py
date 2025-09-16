@@ -46,7 +46,7 @@ for letter in user_input:
 
 
 #second approach:
-def colorChange(user_input, letter):
+def colorChange(letter):
   if letter.lower() == "r":
     print('\033[31m', end="")
   elif letter.lower() == "b":
@@ -67,6 +67,6 @@ def colorChange(user_input, letter):
     print('\33[0m', end = '')
 
 for letter in user_input:
-  colorChange(user_input, letter.lower())
+  colorChange(letter.lower())
   print(letter, end ='')
 print()
