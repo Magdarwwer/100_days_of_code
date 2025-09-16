@@ -22,7 +22,7 @@ def remove_letter(letter, list):
 life_counter = 6
 #Then the user starts to guess letters
 while True:
-  letter = input("Pick a letter> ")
+  letter = input("Pick a letter> ").lower()
   if len(letter) == 1:
     if letter in alphabent:
       if letter in wordChosen:
