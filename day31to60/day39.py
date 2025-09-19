@@ -1,6 +1,6 @@
 #Day 39 - Hangman; string slicing, string manipulation:
 #This hangman project combines lists, string manipulation, and slicing, along with other concepts.
-import random
+import random, os, time
 
 listOfWords = ["british", "suave", "integrity", "accent", "evil", "genius", "Downton"]
 
