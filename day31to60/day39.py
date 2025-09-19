@@ -11,9 +11,9 @@ letter = input("Pick a letter> ")
 
 #check if just one char len(letter) == 1
 
-
+letterPicked = []
 #First the word is picked
-alphabent = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "w", "v", "y", "z"]
+# alphabent = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "w", "v", "y", "z"]
 def remove_letter(letter, list):
   for item in list:
       if item == letter:
@@ -24,7 +24,7 @@ life_counter = 6
 while True:
   letter = input("Pick a letter> ").lower()
   if len(letter) == 1:
-    if letter in alphabent:
+    if letter not in letterPicked:
       if letter in wordChosen:
         for char in wordChosen:
           if char == letter:
