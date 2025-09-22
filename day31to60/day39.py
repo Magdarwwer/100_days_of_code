@@ -43,6 +43,7 @@ while True:
     print("Put in a letter man")
     #continue
     
+        
 if life_counter > 0:# and # 
     print("you win")
 print()
