@@ -35,6 +35,7 @@ while True:
             letterPicked.append(letter)
           else:
             print("_", end ='')
+            allLetters = False
       else:
         print("Nope, not in there.")
         life_counter -=1
