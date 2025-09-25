@@ -29,6 +29,7 @@ while True:
         for char in wordChosen:
           if char == letter:
             print(letter, end ='')
+            letterPicked.append(letter)
           else:
             print("_", end ='')
       else:
