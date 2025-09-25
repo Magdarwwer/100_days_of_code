@@ -24,6 +24,7 @@ life_counter = 6
 while True:
   time.sleep(1)
   os.system("clear")
+  allLetters = True
   letter = input("Pick a letter> ").lower()
   if len(letter) == 1:
     if letter not in letterPicked:
