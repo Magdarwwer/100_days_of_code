@@ -34,6 +34,7 @@ while True:
             print("You found a letter")
             print(letter, end ='')
             letterPicked.append(letter)
+            allLetters = False
           else:
             print("_", end ='')
             allLetters = False
