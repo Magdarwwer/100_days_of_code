@@ -30,6 +30,7 @@ while True:
       if letter in wordChosen:
         for char in wordChosen:
           if char == letter:
+            print("You found a letter")
             print(letter, end ='')
             letterPicked.append(letter)
           else:
