@@ -2,6 +2,9 @@
 
 #lists are accesed by numeric numbers, not randomly -> no connection between 
 #value & key - ex. job <-> name .... DO YOU REMEMBER the name of assistant? -> John <- NO INDEXES
-myUser = {"name" : "David", "job": "bald king"}
+myUser = {"name" : "David", "age": 128}
 print(myUser["name"])
 print(myUser["job"])
+
+print(myUser)
+print(f"Your name is {myUser["name"]} and your age is {myUser["age"]}")
