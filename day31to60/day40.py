@@ -7,4 +7,8 @@ print(myUser["name"])
 print(myUser["job"])
 
 print(myUser)
-print(f"Your name is {myUser["name"]} and your age is {myUser["age"]}")
+print(f'Your name is {myUser["name"]} and your age is {myUser["age"]}')
+
+#double "" -> is a string
+#double '' -> is a string
+#BUT THEY HAVE TO MATCH! fixed upper f-string print line
