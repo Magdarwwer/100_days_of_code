@@ -23,4 +23,4 @@ myUser = {"name":"Andy", "age":128}
 myUser["age"] = 129
 print(myUser["name"])
 
-#DAY 40challenge:
+#DAY 40challenge: Today's challenge is to create a contact card using a dictionary.
