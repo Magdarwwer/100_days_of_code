@@ -17,5 +17,10 @@ print(f'Your name is {myUser["name"]} and your age is {myUser["age"]}')
 # # myUser = {name:"David", "age": 128, "age" = 129}
 # print(myUser)
 
+#Fix my code - task:
+#fix my code:
+myUser = {"name":"Andy", "age":128}
+myUser["age"] = 129
+print(myUser["name"])
 
 #DAY 40challenge:
