@@ -24,3 +24,6 @@ myUser["age"] = 129
 print(myUser["name"])
 
 #DAY 40challenge: Today's challenge is to create a contact card using a dictionary.
+username = input("Please enter your name >")
+userbirth = input("Please enter your birthday")
+userphonenumber = input("Please enter your telephone")
