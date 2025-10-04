@@ -12,3 +12,10 @@ print(f'Your name is {myUser["name"]} and your age is {myUser["age"]}')
 #double "" -> is a string
 #double '' -> is a string
 #BUT THEY HAVE TO MATCH! fixed upper f-string print line
+
+# THATS WRONG
+# # myUser = {name:"David", "age": 128, "age" = 129}
+# print(myUser)
+
+
+#DAY 40challenge:
