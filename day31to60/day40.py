@@ -46,3 +46,19 @@ print(f'Hi {newUser["name"]}. The Dictionary says that you were born on {newUser
 # Please enter your address >Keakow Poland
 # {'name': 'Magdalena', 'birthday': '30/09/2001', 'phonenumber': '678 594 394', 'email': 'aaa@email.com', 'address': 'Keakow Poland'}
 # Hi Magdalena. The Dictionary says that you were born on 30/09/2001, we can call you on 678 594 394, email aaa@email.com, or write to the Keakow Poland
+
+
+
+#ANOTHER SOLUTION:
+# name = input("Name: ").strip().capitalize()
+# dob = input("Date of Birth: ").strip()
+# tel = input("Telephone number: ").strip()
+# email = input("Email: ")
+# address = input("Address: ")
+# contact = {"name": name, "dob": dob, "tel": tel, "email": email, "address": address}
+# print()
+# print(f"""Name: {contact["name"]}""")
+# print(f"""DOB: {contact["dob"]}""")
+# print(f"""Tel: {contact["tel"]}""")
+# print(f"""Email: {contact["email"]}""")
+# print(f"""Address: {contact["address"]}""")
