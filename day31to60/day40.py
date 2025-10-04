@@ -29,12 +29,14 @@ print("🌟Contact Card🌟")
 username = input("Please enter your name >")
 userbirth = input("Please enter your birthday")
 userphonenumber = input("Please enter your telephone")
+useremail = input("Please enter your email>").strip()
+useraddres = input("Please enter your address >").strip()
 
+newUser = {"name": username, "birthday": userbirth, "phonenumber": userphonenumber, "email": useremail, "address": useraddres}
 
+print(newUser)
 
-
-
-
+print(f'Hi {newUser["name"]}. The Dictionary says that you were born on {newUser["birthday"]}, we can call you on {newUser["phonenumber"]}, email {newUser["email"]}, or write to the {newUser["address"]}')
 
 #THE OUTCOME FROM REPLIT
 # Please enter your name >Magdalena
