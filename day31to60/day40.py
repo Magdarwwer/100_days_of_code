@@ -29,3 +29,18 @@ print("🌟Contact Card🌟")
 username = input("Please enter your name >")
 userbirth = input("Please enter your birthday")
 userphonenumber = input("Please enter your telephone")
+
+
+
+
+
+
+
+#THE OUTCOME FROM REPLIT
+# Please enter your name >Magdalena
+# Please enter your birthday30/09/2001
+# Please enter your telephone678 594 394 
+# Please enter your email>aaa@email.com
+# Please enter your address >Keakow Poland
+# {'name': 'Magdalena', 'birthday': '30/09/2001', 'phonenumber': '678 594 394', 'email': 'aaa@email.com', 'address': 'Keakow Poland'}
+# Hi Magdalena. The Dictionary says that you were born on 30/09/2001, we can call you on 678 594 394, email aaa@email.com, or write to the Keakow Poland
