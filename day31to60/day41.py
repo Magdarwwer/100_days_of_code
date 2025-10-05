@@ -22,3 +22,5 @@ for value in myDictionary.values():
 #printing both:
 for name, value in myDictionary.items():
   print(f"{name}:{value}")
+  if(name == "strength"):
+    print("  Woah, SO STRONG!!!")
