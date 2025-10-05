@@ -17,3 +17,8 @@ print()
 print("VALUES:")
 for value in myDictionary.values():
   print(value)
+
+
+#printing both:
+for name, value in myDictionary.items():
+  print(f"{name}:{value}")
