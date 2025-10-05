@@ -10,3 +10,10 @@ print()
 print("KEYS:")
 for i in myDictionary:
   print(i)
+
+
+#printig values again:
+print()
+print("VALUES:")
+for value in myDictionary.values():
+  print(value)
