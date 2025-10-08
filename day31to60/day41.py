@@ -70,3 +70,16 @@ websitesDict = {"name": web_name, "URL":web_url, "description": web_description,
 
 for name, value in websitesDict.items():
   print(f"{name}, {value}")
+  
+  
+  
+#ALTERNATIVE SOLUTION day41 daily challenge
+website = {"name": None, "url": None, "desc": None, "rating": None}
+
+for name in website.keys():
+  #print(name)
+  website[name] = input(f"{name}: ")
+
+print()
+for name, value in website.items():
+   print(f"{name}: {value}")
