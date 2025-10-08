@@ -68,5 +68,5 @@ web_rate = input("Input the star rating out og 5 *****: ")
        
 websitesDict = {"name": web_name, "URL":web_url, "description": web_description, "rating": web_rate}
 
-for name, value in websitesDict:
+for name, value in websitesDict.items():
   print(f"{name}, {value}")
