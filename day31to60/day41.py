@@ -57,3 +57,16 @@ for name, value in myDictionary.items():
       print("Whoa, SO STRONG")
     else:
       print("Looks like you skipped leg day, arm day, chest day and, well, gym day entirely bro!")
+
+
+#Day41 CHALLENGE - Create a dictionary hat stores the following information about a website: name, URL, description and a star rating (out of 5).
+
+web_name = input("Input the website name: ")
+web_url = input("Input the URL: ")
+web_description = input("Input a web description")
+web_rate = input("Input the star rating out og 5 *****: ")
+       
+websitesDict = {"name": web_name, "URL":web_url, "description": web_description, "rating": web_rate}
+
+for name, value in websitesDict:
+  print(f"{name}, {value}")
