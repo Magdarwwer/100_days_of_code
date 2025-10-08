@@ -74,7 +74,7 @@ for name, value in websitesDict.items():
   
   
 #ALTERNATIVE SOLUTION day41 daily challenge
-website = {"name": None, "url": None, "desc": None, "rating": None}
+website = {"name": None, "url": None, "desc": None, "rating": None, "image":None}
 
 for name in website.keys():
   #print(name)
