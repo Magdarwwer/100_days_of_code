@@ -25,12 +25,6 @@ for name, value in myDictionary.items():
   if(name == "strength"):
     print("  Woah, SO STRONG!!!")
     
-    
-    
-    
-    
-    
-    
 #if statement 
 myDictionary = {"name" : "David the Mildy Terrifying", "health": 186, "strength": 4, "equipped":"l33t haxx0r p0werz"}
 
