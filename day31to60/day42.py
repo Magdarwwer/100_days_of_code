@@ -32,3 +32,5 @@ for name, value in pokedict.items():
     
 # Reset koloru po wypisaniu
 print("\033[0m")
+
+
