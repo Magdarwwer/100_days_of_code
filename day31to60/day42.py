@@ -29,3 +29,6 @@ for name, value in pokedict.items():
     if name == "type":
         checkPokeType(value)
     print(f"{name}:{value}")
+    
+# Reset koloru po wypisaniu
+print("\033[0m")
