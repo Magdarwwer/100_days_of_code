@@ -25,10 +25,12 @@ for name in pokedict.keys():
 color = checkPokeType(pokedict["type"])
 
 print("--------")
+print(color, end="")
+
 for name, value in pokedict.items():
-    if name == "type":
-        checkPokeType(value)
-    print(f"{name}:{value}")
+    #if name == "type":
+        #checkPokeType(value)
+    print(f"{name:<15}:{value}")
     
 # Reset koloru po wypisaniu
 print("\033[0m")
