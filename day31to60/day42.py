@@ -3,26 +3,26 @@ pokemonTypes = ["fire", "water", "earth", "wind", "magical", "szkorpon"]
 pokedict = {"name": None, "type": None, "special move": None, "HP": None, "MP":None }
 
 def checkPokeType(ptype):
-  if ptype in pokemonTypes:
     if ptype == "fire":
-      print("\033[31m", end="")
+      return "\033[31m"
     elif ptype == "water":
-      print("\033[34m", end="")
+      return "\033[34m"
     elif ptype == "earth":
-      print("\033[32m", end="")
+      return "\033[32m"
     elif ptype == "wind":
-      print("\033[37m", end="")
+      return "\033[37m"
     elif ptype == "magical":
-      print("\033[35m", end="")
+      return "\033[35m"
     elif ptype == "szkorpon":
-      print("\033[36m", end="")
+      return "\033[36m"
     else:
-      print("\033[37m", end="")
-  else:
-    print("Not a pokemon")
+      return "\033[37m"
 
 for name in pokedict.keys():
   pokedict[name] = input(f"Input your beast's {name} > \t").strip().lower()
+
+#
+
 
 print("--------")
 for name, value in pokedict.items():
