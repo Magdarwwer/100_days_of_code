@@ -21,8 +21,8 @@ def checkPokeType(ptype):
 for name in pokedict.keys():
   pokedict[name] = input(f"Input your beast's {name} > \t").strip().lower()
 
-#
-
+#save color to print all dictionary parts in
+color = checkPokeType(pokedict["type"])
 
 print("--------")
 for name, value in pokedict.items():
