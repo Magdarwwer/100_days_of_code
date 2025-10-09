@@ -22,7 +22,7 @@ def checkPokeType(ptype):
     print("Not a pokemon")
 
 for name in pokedict.keys():
-  pokedict[name] = input(f"Input your beast's {name} > ")
+  pokedict[name] = input(f"Input your beast's {name} > \t").strip().lower()
 
 print("--------")
 for name, value in pokedict.items():
