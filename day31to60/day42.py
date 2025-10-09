@@ -18,6 +18,8 @@ def checkPokeType(ptype):
       print("\033[36m", end="")
     else:
       print("\033[37m", end="")
+  else:
+    print("Not a pokemon")
 
 for name in pokedict.keys():
   pokedict[name] = input(f"Input your beast's {name} > ")
@@ -25,4 +27,3 @@ for name in pokedict.keys():
 print("--------")
 for name, value in pokedict.items():
   print(f"{checkPokeType(pokemonTypes["type"]}{name}:{value}")
-
