@@ -26,4 +26,6 @@ for name in pokedict.keys():
 
 print("--------")
 for name, value in pokedict.items():
-  print(f"{checkPokeType(pokemonTypes["type"]}{name}:{value}")
+    if name == "type":
+        checkPokeType(value)
+    print(f"{name}:{value}")
