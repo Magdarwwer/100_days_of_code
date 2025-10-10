@@ -1,6 +1,7 @@
 #Day 43 - Tables/ 2D DIMENTIONAL LISTS
 #ertical data is used for fields: one category - name, ID, favorite biscuit, etc
 #Behind the scenes, we see a list inside a list
+import random
 my1DList = ["Johnny", 21, "Mac"]
 
 my2DList = [ ["Johnny", 21, "Mac"],
@@ -38,3 +39,18 @@ my2DList =[  ["Johnny", 21, "Mac"], # No opening square bracket
              ["Gethin", 17, "PC"] ] #Extra , after this sub list - the last sub-list doesn't have a comma after it.
 
 print(my2DList[0][1])
+
+#DAY43 - BINGO CARD with 2D lists:
+#randomly generate numbers in a list
+#fill in Bingo Card with random numbers
+#display the Bingo Card
+
+bingo2D = [[]]
+
+for item in range(0,3):
+    for jtem in range(0,3):
+        number = random.randint(0,91)
+        if item == 1 and jtem == 1:
+            bingo2D[item][jtem] = "BINGO"
+        else:
+            bingo2D[item][jtem] = number
