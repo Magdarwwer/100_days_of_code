@@ -31,3 +31,10 @@ my2DList = [ ["Johnny", 21, "Mac"],
              ["Gethin", 17, "PC"] ]
 print(my2DList[0][2])
 
+
+#FIX MY CODE:
+my2DList =[  ["Johnny", 21, "Mac"], # No opening square bracket
+             ["Sian", 19, "PC"],    #Missing two commas one after "Sian" and one after a line
+             ["Gethin", 17, "PC"] ] #Extra , after this sub list - the last sub-list doesn't have a comma after it.
+
+print(my2DList[0][1])
