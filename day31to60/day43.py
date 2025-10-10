@@ -25,3 +25,9 @@ my2DList[1][2] = "Linux"
 print(my2DList[1])
 print(my2DList)
 
+#COMMON ERRORS:
+my2DList = [ ["Johnny", 21, "Mac"],
+             ["Sian", 19, "PC"],
+             ["Gethin", 17, "PC"] ]
+print(my2DList[0][2])
+
