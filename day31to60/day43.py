@@ -18,3 +18,10 @@ print(my2DList[0])# This code outputs ['Johnny', 21, 'Mac'].
 print(my2DList[0][0]) # This code outputs 'Johnny'. It's Johnny's name from list 0 (first square bracket), item 0 (second square bracket)
 
 print(my2DList[1][2]) # This code outputs 'PC'. It's Sian's computing preferene from list 1 (first square bracket), item 2 (second square bracket)
+
+#playing out with changing elements in 2D lists:
+my2DList[1][2] = "Linux"
+
+print(my2DList[1])
+print(my2DList)
+
