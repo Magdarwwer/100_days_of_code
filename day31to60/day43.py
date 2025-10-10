@@ -9,6 +9,8 @@ my2DList = [ ["Johnny", 21, "Mac"],
 
 my2DList = [ ["Johnny", 21, "Mac"], ["Sian", 19, "PC"], ["Gethin", 17, "PC"] ]
 
-print(my2DList)
+print(my2DList) # This will output [['Johnny', 21, 'Mac'], ['Sian', 19, 'PC'], ['Gethin', 17, 'PC']]
 
-# This will output [['Johnny', 21, 'Mac'], ['Sian', 19, 'PC'], ['Gethin', 17, 'PC']]
+
+#to print a single row:
+print(my2DList[0])# This code outputs ['Johnny', 21, 'Mac'].
